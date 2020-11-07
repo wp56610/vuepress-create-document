@@ -1,24 +1,13 @@
-# demo
+# 自动生成带示例的文档
 
-## Project setup
-```
-yarn install
-```
 
-### Compiles and hot-reloads for development
+## install
 ```
-yarn serve
+npm i 
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## run
 
-### Lints and fixes files
 ```
-yarn lint
+npm run document
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -4,12 +4,16 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build --target lib --name demo ./src/index.js",
+    "build:test": "vue-cli-service build --target lib --test test./src/index.js",
+    "lint": "vue-cli-service lint",
+    "document": "npm run build && vuese gen && gulp && vuese serve --open"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "through2": "^4.0.2",
+    "vue": "^2.6.11",
+    "vuepress": "^1.7.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -18,7 +22,9 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "gulp": "^4.0.2",
+    "vue-template-compiler": "^2.6.11",
+    "vuese": "^1.4.7"
   },
   "eslintConfig": {
     "root": true,
